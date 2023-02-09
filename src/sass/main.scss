@@ -1,0 +1,8 @@
+@import './base/main';
+@import './comonents/main';
+@import './layouts/main';
+
+$background: teal;
+body {
+  background-color: $background;
+}

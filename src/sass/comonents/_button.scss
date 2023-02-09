@@ -1,0 +1,12 @@
+.button {
+  // padding: 7px 13px;
+  // height: 24px;
+
+  &:focus,
+  &:hover {
+    // background-color: var(--light-hover-color);
+  }
+
+  @media screen and (min-width: $desktop) {
+  }
+}

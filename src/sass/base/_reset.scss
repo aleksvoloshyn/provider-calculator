@@ -1,0 +1,47 @@
+/* reset inline */
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+
+/* reset lists */
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* reset links */
+a {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  //   color: var(--primary-text-color);
+}
+
+/* reset images */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/* ** */
+
+.centered {
+  text-align: center;
+}
+
+button {
+  cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
