@@ -1,24 +1,24 @@
 {
-  "name": "parcel-template",
+  "name": "provider-calculator",
   "version": "1.0.0",
-  "description": "parcel template",
+  "description": "provider-calculator",
   "main": "js/main.js",
-  "homepage": "https://aleksvoloshyn/parcel-template.git",
+  "homepage": "https://aleksvoloshyn/provider-calculator.git",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel src/index.html",
-    "build": "parcel build src/*.html --public-url /myParcel/",
-    "predeploy": "npm run build -- --public-url /parcel-template/",
+    "build": "parcel build src/*.html --public-url /provider-calculator/",
+    "predeploy": "npm run build -- --public-url /provider-calculator/",
     "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aleksvoloshyn/parcel-template.git"
+    "url": "git+https://github.com/aleksvoloshyn/provider-calculator.git"
   },
   "author": "alexx.voloshyn@gmail.com",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/aleksvoloshyn/parcel-template.git/issues"
+    "url": "https://github.com/aleksvoloshyn/provider-calculator.git/issues"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.7.0",

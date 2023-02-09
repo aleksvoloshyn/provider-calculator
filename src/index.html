@@ -15,10 +15,141 @@
   </head>
 
   <body>
-    <include src="header.html"></include>
+    <!-- <include src="header.html"></include>
     Hello empty parcel
-    <include src="footer.html"></include>
+    <include src="footer.html"></include> -->
+    <div class="container">
+      <!-- INPUTS -->
+      <div class="values">
+        <div class="values-wrap">
+          <div class="values-header">
+            <label for="storage"> Storage:</label>
+            <p class="rate-value"></p>
+          </div>
 
+          <input
+            class="values-input"
+            type="range"
+            name="storage"
+            value="0"
+            min="0"
+            max="1000"
+            step="1"
+          />
+        </div>
+        <div class="values-wrap">
+          <div class="values-header">
+            <label for="transfer">Transfer:</label>
+            <p class="transfer-value"></p>
+          </div>
+
+          <input
+            class="values-input"
+            type="range"
+            name="transfer"
+            value="0"
+            min="0"
+            max="1000"
+            step="1"
+          />
+        </div>
+      </div>
+
+      <!-- DIAGRAM -->
+      <div class="diagram">
+        <div class="diagram-data">
+          <div class="provider">
+            <p class="provider-title red">backblaze</p>
+            <img
+              class="provider-logo"
+              width="32"
+              height="32"
+              src="./img/backblaze.png"
+              alt=""
+            />
+          </div>
+
+          <div class="provider provider-group">
+            <div class="provider-title-wrapper">
+              <p class="provider-title orange">bunny</p>
+              <img
+                class="provider-logo"
+                width="32"
+                height="32"
+                src="./img/bunny.png"
+                alt=""
+              />
+            </div>
+            <div class="provider-options-wrapper">
+              <label class="provider-opions-label">
+                <input type="radio" name="type" value="hdd" checked />
+                HDD
+              </label>
+              <label class="provider-opions-label">
+                <input type="radio" name="type" value="ssd" />
+                SSD
+              </label>
+            </div>
+          </div>
+
+          <div class="provider provider-group">
+            <div class="provider-title-wrapper">
+              <p class="provider-title purple">scaleway</p>
+              <img
+                class="provider-logo"
+                width="32"
+                height="32"
+                src="./img/scaleway.png"
+                alt=""
+              />
+            </div>
+            <div class="provider-options-wrapper">
+              <label class="provider-opions-label">
+                <input type="radio" name="quantity" value="multi" checked />
+                Multi
+              </label>
+              <label class="provider-opions-label">
+                <input type="radio" name="quantity" value="single" />
+                Single
+              </label>
+            </div>
+          </div>
+          <div class="provider">
+            <p class="provider-title blue">vultr</p>
+            <img
+              class="provider-logo"
+              width="32"
+              height="32"
+              src="./img/vultr.png"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="diagram-bars hidden">
+          <div class="diagram-bars-wrapper">
+            <div class="diagram-bars-backblaze bar"></div>
+            <p class="backblaze-value provider-value"></p>
+            <p class="currency">$</p>
+          </div>
+          <div class="diagram-bars-wrapper">
+            <div class="diagram-bars-bunny bar"></div>
+            <p class="bunny-value provider-value"></p>
+            <p class="currency">$</p>
+          </div>
+          <div class="diagram-bars-wrapper">
+            <div class="diagram-bars-scaleway bar"></div>
+            <p class="scaleway-value provider-value"></p>
+            <p class="currency">$</p>
+          </div>
+          <div class="diagram-bars-wrapper">
+            <div class="diagram-bars-vultr bar"></div>
+            <p class="vultr-value provider-value"></p>
+            <p class="currency">$</p>
+          </div>
+        </div>
+      </div>
+    </div>
     <script type="module" src="./js/main.js"></script>
   </body>
 </html>
